@@ -1,0 +1,45 @@
+{
+    "generate": true,
+    "use_robot": true,
+    "wait_frames": 30,
+    "n_frames": 30,
+    "remove_background": true,
+    "define_areas_for_training": false,
+    "delta": 0.05,
+    "visualize": true,
+    "generate_test_grasps": false,
+    "num_test_grasps": 6,
+    "gen_alpha": true,
+    "alphas": [
+        10,
+        45
+    ],
+    "gen_beta": true,
+    "betas": [
+        -10,
+        10
+    ],
+    "gen_gamma": true,
+    "gammas": [
+        -10,
+        10
+    ],
+    "step_size": 10,
+    "only_best": true,
+    "test_pc_show": false,
+    "grasp_sampler_folder": "checkpoints/gan_pretrained/",
+    "grasp_evaluator_folder": "checkpoints/evaluator_pretrained/",
+    "refinement_method": "sampling",
+    "refine_steps": 50,
+    "npy_folder": "data/cam/Cam_preprocessed.npy",
+    "threshold": 0.1,
+    "choose_fn": "better_than_threshold",
+    "target_pc_size": 1024,
+    "display_grasps": 100,
+    "num_grasp_samples": 600,
+    "generate_dense_grasps": false,
+    "cut_values": [0.0, 0.45],
+    "batch_size": 20,
+    "num_batches": 30
+}
+   
